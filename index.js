@@ -1,7 +1,6 @@
 var request = require('request');
 
-
-module.export = function(context,cb){
+module.exports = function(context,cb){
   
   reques.post('https://hooks.slack.com/services/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',{
     json: {
