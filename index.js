@@ -6,7 +6,7 @@ module.exports = function(context,cb){
 
   if(context.query.apikey != '123456789') return cb('Invalid API Key');
   
-  request.post('https://hooks.slack.com/services/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',{
+  request.post('https://hooks.slack.com/services/T0E2T....xvWGY',{
     json: {
       text: '```\n' + JSON.stringify(context.data) + '\n```'
     }
