@@ -9,7 +9,7 @@ module.exports = function(context,cb){
   request.post('https://hooks.slack.com/services/T0E2T....xvWGY',{
     json: {
       text: '```\n' + JSON.stringify(context.data) + '\n```'
-    }
+    } 
   },function(e,s,b){
     console.log('Error', e);
     cb(e);
